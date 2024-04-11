@@ -1,0 +1,29 @@
+操作说明 
+
+一 安装python和pycharm
+1. 从python官网 https://www.python.org/ 下载并在本地安装python。
+2. 从pycharm官网 https://www.jetbrains.com/ 下载并在本地安装pycharm。
+3. pycharm的File下拉菜单点击open，选择learn_scrapy文件夹打开。
+
+
+二 程序说明
+
+1. 自定义爬虫
+crawler_asyn.py: 异步抓取数据
+crawler_basic.py：(1) 发送请求返回状态码 (2) 读取图片 (3) 读HTML表格后存储在本地
+crawler_basic_2.py：抓超链接
+crawler_bs4.py：读 https://www.imdb.com/ 的超链接
+crawler_etree.py：用etree解析数据
+crawler_selenium_1.py：用selenium库操作谷歌浏览器抓取数据
+crawler_table.py：抓取HTML中的表格数据
+crawler_table_direct.py：演示直接访问网站被拒绝
+
+2. 使用scrapy爬虫框架
+在项目根目录下运行 scrapy crawl mycrawler -o result.json
+抓取 http://books.toscrape.com/ 所有书的title price 和 availability 存储在result.json文件中。
+
+三 其他语言的爬虫见
+https://github.com/BruceDone/awesome-crawler
+  
+
+
